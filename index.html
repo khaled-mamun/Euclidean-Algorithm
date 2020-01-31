@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+
+  <title>The Euclidean Algorithm</title>
+
+  <!-- Link to Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+
+  <!-- Link to jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Link to Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+
+  <!-- Link to Moment.js -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/locale/af.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+  <!-- Link to mystyle CSS -->
+  <!--link rel='stylesheet' href='assets/3dPopUp.css'-->
+
+  <link rel="stylesheet" href="geo.css" />
+  <link rel="stylesheet" href="gcd.css" />
+  <link rel="stylesheet" href="popup.css" />
+
+  <!--- ----------------- ---------------- -->
+
+  <br />
+  <br />
+  <h1>
+    <p id="demo"></p>
+  </h1>
+  <br />
+  <br />
+
+  <hr />
+  <br />
+</head>
+
+<body>
+
+  <br>
+  <div class="nice-wrap">
+
+    <div class="a">
+      <label>Enter The 1st Number:</label>
+      <input class="nice-textbox" type="text" id="a" name="a" />
+
+    </div>
+    <div class="b">
+
+      <label>Enter The 2nd Number:</label>
+      <input class="nice-textbox" type="text" id="b" name="b" />
+
+
+    </div>
+
+    <canvas id="playArea"> </canvas>
+
+    <div class="button_container">
+
+      <p class="description">Click The Button Below To Get GCD</p>
+      <button onclick="gcd()" class="btn"><span>Submit !</span></button>
+    </div>
+
+    <div class="box">
+      <a class="button" href="#popup1">About This Application</a>
+    </div>
+
+    <div id="popup1" class="overlay">
+      <div class="popup">
+        <h2>The Greatest Common Divisor Calculator</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+
+          <div class="w3-container">
+
+            <p>This application was created for academic purpose:</p>
+            <ul class="w3-ul w3-card-4">
+              <li class="w3-bar">
+
+
+                <img src="km.jpg" class="w3-circle" alt="Norway" style="width:85px">
+
+                <div class="w3-bar-item">
+                  <span class="w3-large">Khaled Mamun</span><br>
+                  <span>Application Developer</span>
+                </div>
+
+              </li>
+
+              <li class="w3-bar">
+
+
+                <img src="dtz.jpg" class="w3-circle" alt="Norway" style="width:85px">
+
+                <div class="w3-bar-item">
+                  <span class="w3-large">Dr. Tanja Zatezalo</span><br>
+                  <span>Instructor</span>
+                </div>
+
+              </li>
+
+
+              <li class="w3-bar">
+
+                <img src="cu.png" class="w3-circle" alt="Norway" style="width:85px">
+                <div class="w3-bar-item">
+                  <span class="w3-large">Campbell University</span><br>
+                  <span>MATH-305: Introduction to Cryptography</span> <br>
+                  <span>Date: 20 January-2020</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Link to myscript JavaScript -->
+    <script src="gcd.js"></script>
+    <script type="text/javascript" src="geo.js"></script>
+</body>
+
+</html>

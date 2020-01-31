@@ -1,0 +1,91 @@
+html,
+body {
+  widht: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #061928;
+  margin: 0;
+  padding: 0;
+}
+
+#playArea {
+
+  background: #061928;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
+
+
+.button_container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30%;
+  padding-top: 30px;
+}
+
+.description,
+.link {
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+  color: rgb(168, 164, 164);
+}
+
+.description {
+  padding-top: 30px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.btn {
+  border: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: rgb(0, 0, 0);
+  padding: 17px 60px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(219, 219, 188, 0.904);
+}
+
+.btn span {
+  position: relative;
+  z-index: 1;
+  font-weight: bolder;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background: #84b2b8;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btn:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+.link {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.link a {
+  color: #000;
+  font-size: 25px;
+}
